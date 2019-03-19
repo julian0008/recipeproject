@@ -105,7 +105,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         Notes guacNotes = new Notes();
         guacNotes.setRecipeNotes("Sample Guacamole Notes");
 
+        guacNotes.setRecipe(guacRecipe);
         guacRecipe.setNotes(guacNotes);
+
 
         guacRecipe.getIngredients().add(new Ingredient("ripe avocado", new BigDecimal(2), eachUom, guacRecipe));
         guacRecipe.getIngredients().add(new Ingredient("Kosher salt", new BigDecimal(0.5), teaSpoonUom, guacRecipe));
