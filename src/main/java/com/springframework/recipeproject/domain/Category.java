@@ -12,7 +12,7 @@ public class Category {
 
     private String description;
 
-    @ManyToMany(mappedBy = "categories")
+    @ManyToMany(mappedBy = "categories", fetch = FetchType.EAGER)
     private Set<Recipe> recipes;
 
     public Long getId() {
