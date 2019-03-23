@@ -55,7 +55,7 @@ public class IndexControllerTest {
         Recipe recipe1 = new Recipe();
         Recipe recipe2 = new Recipe();
 
-        //recipe1.setDescription("sample description for recipe 1");
+        recipe1.setDescription("sample description for recipe 1");
 
         recipes.add(recipe1);
         recipes.add(recipe2);
