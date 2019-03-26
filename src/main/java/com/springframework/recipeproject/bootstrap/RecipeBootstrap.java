@@ -106,6 +106,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         guacRecipe.setCookTime(0);
         guacRecipe.setDifficulty(Difficulty.EASY);
         guacRecipe.setDirections("Sample Direction");
+        guacRecipe.setServings(3);
+        guacRecipe.setSource("Simply Recipe");
+        guacRecipe.setUrl("http://www.example.com");
 
         Notes guacNotes = new Notes();
         guacNotes.setRecipeNotes("Sample Guacamole Notes");
