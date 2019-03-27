@@ -4,7 +4,9 @@ import com.springframework.recipeproject.commands.NotesCommand;
 import com.springframework.recipeproject.commands.RecipeCommand;
 import com.springframework.recipeproject.domain.Notes;
 import com.springframework.recipeproject.domain.Recipe;
+import lombok.Synchronized;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,6 +18,8 @@ public class NotesCommandToNotes implements Converter<NotesCommand, Notes> {
         this.recipeConverter = recipeConverter;
     }
 
+    @Synchronized
+    @Nullable
     @Override
     public Notes convert(NotesCommand source) {
         if(source == null) {
