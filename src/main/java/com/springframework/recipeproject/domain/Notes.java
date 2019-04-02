@@ -19,4 +19,5 @@ public class Notes {
     @Lob
     private String recipeNotes;
 
+    //TODO: fix database config where updating notes adds another row in Notes table
 }
